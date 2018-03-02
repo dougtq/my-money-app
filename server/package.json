@@ -1,0 +1,46 @@
+{
+  "name": "my-money-app",
+  "version": "1.0.0",
+  "description": "The back-end to a personal finance app",
+  "main": "src/loader.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon",
+    "prod": "./node_modules/.bin/pm2 start ./src/loader.js --name my-money-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dougtq/my-money-app.git"
+  },
+  "keywords": [
+    "back-end",
+    "financial",
+    "app",
+    "udemy"
+  ],
+  "author": "Douglas Alves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dougtq/my-money-app/issues"
+  },
+  "homepage": "https://github.com/dougtq/my-money-app#readme",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "compression": "1.7.2",
+    "dotenv": "5.0.0",
+    "express": "4.16.2",
+    "express-query-int": "2.0.0",
+    "helmet": "3.11.0",
+    "lodash": "4.17.5",
+    "mongoose": "5.0.6",
+    "mongoose-paginate": "5.0.3",
+    "node-restful": "0.2.6",
+    "pm2": "2.10.1",
+    "response-time": "2.3.2",
+    "rimraf": "2.6.2",
+    "shortid": "2.2.8"
+  },
+  "devDependencies": {
+    "eslint": "4.18.1",
+    "nodemon": "1.15.1"
+  }
+}
